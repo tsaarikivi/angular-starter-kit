@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FirebaseModule } from '@app/core/modules/firebase/firebase.module';
+import { AuthService } from '@app/core/services';
 
 @NgModule({
   imports: [
@@ -18,7 +19,7 @@ import { FirebaseModule } from '@app/core/modules/firebase/firebase.module';
     ]),
     FirebaseModule
   ],
-  providers: [],
+  providers: [AuthService],
   exports: [CommonModule, RouterModule]
 })
 export class CoreModule {
