@@ -57,6 +57,20 @@ The types folder should only contain re-usable classes `ng g class types/classes
 
 Any fonts, custom-elements, images should be here. The assets folder will be copied by build to the root of the build.
 
+### Firebase
+
+This example contains an AuthService and an IsAuthenticatedGuard. The guard is not implemented in any routes yet. You should add firebaseConfig in the environment file. The core/modules/firebase FirebaseModule could be extended with realtime db etc. It currently holds the Firestore and Auth.
+
+### Material
+
+This example contains a ready setup of @angular/material. You should upgrade the shared/modules/custom-material CustomMaterialModule by importing and exporting the wanted material modules that should be in a feature.
+
+Change the theme in the root styles.scss file.
+
+Hammer.js has been set in main.ts.
+
+Also the browser animations module has been required in the CoreModule.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
