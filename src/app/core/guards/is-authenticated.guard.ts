@@ -4,8 +4,10 @@ import {
   ActivatedRouteSnapshot,
   RouterStateSnapshot
 } from '@angular/router';
-import { Observable } from 'rxjs/Observable';
 import { AngularFireAuth } from 'angularfire2/auth';
+import { Observable } from 'rxjs/Observable';
+
+import 'rxjs/add/operator/map';
 
 @Injectable()
 export class IsAuthenticatedGuard implements CanActivate {

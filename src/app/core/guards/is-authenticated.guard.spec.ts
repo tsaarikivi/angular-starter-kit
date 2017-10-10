@@ -9,7 +9,10 @@ describe('IsAuthenticatedGuard', () => {
     });
   });
 
-  it('should ...', inject([IsAuthenticatedGuard], (guard: IsAuthenticatedGuard) => {
-    expect(guard).toBeTruthy();
-  }));
+  it(
+    'should ...',
+    inject([IsAuthenticatedGuard], (guard: IsAuthenticatedGuard) => {
+      expect(guard).toBeTruthy();
+    })
+  );
 });
