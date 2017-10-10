@@ -57,6 +57,11 @@ The types folder should only contain re-usable classes `ng g class types/classes
 
 Any fonts, custom-elements, images should be here. The assets folder will be copied by build to the root of the build.
 
+## Stripe checkout
+The checkout.js file is imported in index.html. The CheckoutService exposes a public function openStripeCheckoutHandler() which would handle everything. The CheckoutService should implement the amount changes and item adds to checkout etc.
+
+In this example the checkout feature then calls that function.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
