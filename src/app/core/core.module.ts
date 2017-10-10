@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
+import { FirebaseModule } from '@app/core/modules/firebase/firebase.module';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -11,7 +13,8 @@ import { RouterModule } from '@angular/router';
         path: '',
         loadChildren: '@app/views/root-view/root-view.module#RootViewModule'
       }
-    ])
+    ]),
+    FirebaseModule
   ],
   providers: [],
   exports: [CommonModule, RouterModule]
