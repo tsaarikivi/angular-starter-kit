@@ -191,6 +191,10 @@
   version "0.0.41"
   resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-0.0.41.tgz#9deccd92791877f87365ed8991062132f3b645e0"
 
+"@types/firebase@^2.4.32":
+  version "2.4.32"
+  resolved "https://registry.yarnpkg.com/@types/firebase/-/firebase-2.4.32.tgz#96224840717dc514c7db328e85444364dbba34ce"
+
 "@types/jasmine@*", "@types/jasmine@~2.5.53":
   version "2.5.54"
   resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-2.5.54.tgz#a6b5f2ae2afb6e0307774e8c7c608e037d491c63"
