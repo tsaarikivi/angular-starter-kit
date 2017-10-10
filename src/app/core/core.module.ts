@@ -2,6 +2,7 @@ import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { CheckoutService } from '@app/core/services';
 
 @NgModule({
   imports: [
@@ -13,7 +14,7 @@ import { RouterModule } from '@angular/router';
       }
     ])
   ],
-  providers: [],
+  providers: [CheckoutService],
   exports: [CommonModule, RouterModule]
 })
 export class CoreModule {
