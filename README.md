@@ -70,6 +70,9 @@ Change the theme in the root styles.scss file.
 Hammer.js has been set in main.ts.
 
 Also the browser animations module has been required in the CoreModule.
+### PWA
+
+A service worker has been added. It is built on `ng build --prod` automatically. Update your icons through https://realfavicongenerator.net and replace the corresponding files in the assets folder. Consider only editing the manifest. The manifest made by realfavicongenerator is not extensive. Add files to precache in ngsw-manifest.json.
 
 ## Development server
 

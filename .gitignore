@@ -8,6 +8,7 @@
 # dependencies
 /node_modules
 /documentation
+/coverage
 
 # IDEs and editors
 /.idea
