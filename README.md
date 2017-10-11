@@ -61,6 +61,9 @@ Any fonts, custom-elements, images should be here. The assets folder will be cop
 The checkout.js file is imported in index.html. The CheckoutService exposes a public function openStripeCheckoutHandler() which would handle everything. The CheckoutService should implement the amount changes and item adds to checkout etc.
 
 In this example the checkout feature then calls that function.
+### PWA
+
+A service worker has been added. It is built on `ng build --prod` automatically. Update your icons through https://realfavicongenerator.net and replace the corresponding files in the assets folder. Consider only editing the manifest. The manifest made by realfavicongenerator is not extensive. Add files to precache in ngsw-manifest.json.
 
 ## Development server
 
