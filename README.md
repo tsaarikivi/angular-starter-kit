@@ -57,6 +57,10 @@ The types folder should only contain re-usable classes `ng g class types/classes
 
 Any fonts, custom-elements, images should be here. The assets folder will be copied by build to the root of the build.
 
+### PWA
+
+A service worker has been added. It is built on `ng build --prod` automatically. Update your icons through https://realfavicongenerator.net and replace the corresponding files in the assets folder. Consider only editing the manifest. The manifest made by realfavicongenerator is not extensive. Add files to precache in ngsw-manifest.json.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
